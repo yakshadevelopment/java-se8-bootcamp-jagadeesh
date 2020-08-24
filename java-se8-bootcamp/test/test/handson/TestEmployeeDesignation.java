@@ -1,9 +1,14 @@
 package test.handson;
 
-import static org.junit.Assert.assertArrayEquals;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+
 import java.util.HashMap;
 
-import org.junit.Test;
+
 
 import handson.EmployeeDesignation;
 

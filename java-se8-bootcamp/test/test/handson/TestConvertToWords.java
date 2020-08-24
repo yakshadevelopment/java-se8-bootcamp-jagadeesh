@@ -1,10 +1,11 @@
 package test.handson;
 
-import static org.junit.Assert.assertEquals;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 
 import handson.ConvertToWords;
-import handson.DuplicateWord;
 
 
 public class TestConvertToWords {
@@ -13,14 +14,14 @@ public class TestConvertToWords {
 	@Test
 	public void testConvertToWords() {
 		
-		assertEquals("nine thousand nine hundred ninety nine" ,ConvertToWords.convertToWords(9999));
+		Assertions.assertEquals("nine thousand nine hundred ninety nine" ,ConvertToWords.convertToWords(9999));
 		
-		assertEquals("fifty six" ,ConvertToWords.convertToWords(56));
-		assertEquals("five hundred fifty nine" ,ConvertToWords.convertToWords(559));
+		Assertions.assertEquals("fifty six" ,ConvertToWords.convertToWords(56));
+		Assertions.assertEquals("five hundred fifty nine" ,ConvertToWords.convertToWords(559));
 		
-		assertEquals("seven hundred seventy eight" ,ConvertToWords.convertToWords(778));
-		assertEquals("three hundred thirty three" ,ConvertToWords.convertToWords(333));
-		assertEquals("one hundred seventeen" ,ConvertToWords.convertToWords(117));
+		Assertions.assertEquals("seven hundred seventy eight" ,ConvertToWords.convertToWords(778));
+		Assertions.assertEquals("three hundred thirty three" ,ConvertToWords.convertToWords(333));
+		Assertions.assertEquals("one hundred seventeen" ,ConvertToWords.convertToWords(117));
 	}
 	
 	

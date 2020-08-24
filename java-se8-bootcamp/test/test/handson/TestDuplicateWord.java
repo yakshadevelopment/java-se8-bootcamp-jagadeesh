@@ -1,9 +1,10 @@
 package test.handson;
 
-import static org.junit.Assert.assertEquals;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
-import handson.ConvertToWords;
+import org.junit.jupiter.api.Test;
+
+
 import handson.DuplicateWord;
 
 

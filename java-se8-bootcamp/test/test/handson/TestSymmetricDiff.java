@@ -1,9 +1,13 @@
+
 package test.handson;
 
 import java.text.ParseException;
 
-import org.junit.Assert;
-import org.junit.Test;
+
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 
 import handson.SymmetricDifference;
 
@@ -18,7 +22,7 @@ public class TestSymmetricDiff {
 
 		int[] c = { 11, 12, 24, 26, 36 };
 
-		Assert.assertArrayEquals(c, SymmetricDifference.getSymmetricDifference(a, b));
+		Assertions.assertArrayEquals(c, SymmetricDifference.getSymmetricDifference(a, b));
 
 		int[] a1 = { 11, 5, 14, 26, 3 };
 
@@ -26,7 +30,7 @@ public class TestSymmetricDiff {
 
 		int[] c1 = { 1, 11, 14, 26 };
 
-		Assert.assertArrayEquals(c1, SymmetricDifference.getSymmetricDifference(a1, b1));
+		Assertions.assertArrayEquals(c1, SymmetricDifference.getSymmetricDifference(a1, b1));
 
 	}
 

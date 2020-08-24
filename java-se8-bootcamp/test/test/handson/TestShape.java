@@ -1,10 +1,10 @@
 package test.handson;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import handson.Fibonacci;
+
 import handson.Rectangle;
 import handson.Square;
 import handson.Triangle;

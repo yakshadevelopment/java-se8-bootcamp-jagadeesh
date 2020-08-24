@@ -1,14 +1,19 @@
 package test.handson;
 
 import java.text.ParseException;
+
 import java.util.HashMap;
 import java.util.TreeMap;
 
-import org.junit.Assert;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+
 
 import handson.BankRate;
-import handson.DateValidator;
+
 
 
 public class TestBankRate {
@@ -16,7 +21,7 @@ public class TestBankRate {
 	
 	
 	@Test
-    public void testBankRate_Success() throws ParseException {
+    public void testBankRate_calculateDiscount() throws ParseException {
        
 		
         HashMap<String,String> hm = new HashMap<String,String>();
@@ -45,7 +50,7 @@ public class TestBankRate {
 		
 		
         
-        Assert.assertEquals(tm, BankRate.calculateDiscount(hm,hm1));
+		Assertions.assertEquals(tm, BankRate.calculateDiscount(hm,hm1));
         
         
     }

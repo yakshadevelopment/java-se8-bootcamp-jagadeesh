@@ -1,12 +1,12 @@
 package test.handson;
 
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+
 
 import handson.UniqueCollection;
-import junit.framework.Assert;
+
 
 public class TestUniqueCollection {
 	
